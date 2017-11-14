@@ -1,2 +1,6 @@
 body {
   background-color: blue; }
+
+.button {
+  background-color: transparent;
+  border: 0; }
