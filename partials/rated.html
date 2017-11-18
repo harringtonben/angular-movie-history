@@ -9,8 +9,8 @@
                     <div class="caption">
                         <h3 class="title">{{movie.title}}</h3>
                         <p class="overview">{{movie.overview}}</p>
-                        <p>
-                            <p>Rating: {{movie.rating}}</p>
+                        <p> Rating:
+                            <star-rating-comp rating="movie.rating" num-of-stars="5" on-click="starChange($event, movie)"></star-rating-comp>
                         </p>  
                     </div>
                 </div>
