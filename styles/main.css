@@ -17,6 +17,10 @@
     position: absolute;
     right: 15px;
     top: 5px; }
+  .movie .thumbnail .detail {
+    position: absolute;
+    left: 15px;
+    top: 5px; }
 
 body {
   background-color: #E4E4E4; }
