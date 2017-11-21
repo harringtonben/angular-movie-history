@@ -1,7 +1,12 @@
 <div class="text-center" id="wishlist">
     <h1>My Wishlist</h1>
     <div id="movies">
-        <div ng-repeat="movie in movies" class="col-sm-6 col-md-4 movie">
+        <div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
+            <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="text" class="form-control" placeholder="Find a movie" ng-model="searchText">
+        </div>
+        
+        <div ng-repeat="movie in movies | filter: searchText" class="col-sm-6 col-md-4 movie">
             <div class="thumbnail">
                 <button class="btn btn-danger delete text-left glyphicon glyphicon-trash" ng-click="deleteMovie(movie.id)"></button>
                 <button class="btn btn-primary detail glyphicon glyphicon-search" ng-click="movieDetail(movie.id)"></button>
